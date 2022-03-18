@@ -1,5 +1,5 @@
 body{
-    background-color: aquamarine;
+    background-color: navajowhite;
     font-size: 16px;
 }
 h3{
@@ -30,8 +30,11 @@ h3{
 }
 .img-logo, .username{
     text-align: center;
+} 
+img{
+    border-radius: 50%;
+    border: 2px solid coral;
 }
-
 .information, .Education, .other{
     display: flex;
     flex-direction: row;
@@ -77,6 +80,9 @@ footer{
 .icons i:hover{
     transform: scale(1.1);
     color: #05cdfa;
+}
+.img-logo{
+    margin-left: 30px;
 }
 .online{
     position: relative;
