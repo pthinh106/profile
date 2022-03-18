@@ -78,6 +78,20 @@ footer{
     transform: scale(1.1);
     color: #05cdfa;
 }
+.online{
+    position: relative;
+}
+.online::after{
+    content: '';
+    width: 15px;
+    height: 15px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background: #41db51;
+    position: absolute;
+    margin-block-start: 15px;
+    margin-inline-start: -30px;
+}
 @media screen and (max-width:860px){
     .information, .Education, .other{
         display: flex;
