@@ -147,6 +147,23 @@ li,p{
     .container{
         margin-top: 30px;
         width: 360px;
+<<<<<<< HEAD
+=======
+    }
+    .left{
+        border-right: none;
+    }
+    .container .col .col-4{
+        flex: 1;
+        margin: 0;
+    }
+    li,p{
+        width: 300px;
+        word-wrap: break-word;
+    }
+    .project ul li ul li{
+        margin-inline-start: -50px;
+>>>>>>> 067ead3c3bc32bdb97a4fe39070a54e940cb59ab
     }
     .left{
         border-right: none;
