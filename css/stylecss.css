@@ -1,59 +1,43 @@
-body{
-    background-color: navajowhite;
-    font-size: 16px;
+:root{
+    --clr : #741d1d;
 }
-h3{
-    color: coral;
-    margin-left: 5px;
+body{
+    font-size: 18px;
+    background-color: beige;
 }
 .container{
-    width: 750px;
-    display: flex;
-    margin: auto;
-    margin-top: 20px;
-    border: 1px solid coral;
-    border-radius: 20px;
-    background-color: aliceblue;
-}
-.row{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 750px;
+    height: max-content;
+    border-radius: 25px;
+    border: 2px solid var(--clr);
+    margin: auto;
     padding: 15px;
+    background-color: antiquewhite;
+    flex-wrap: wrap;
 }
-.top{
-    margin-top: 20px;
+h2{
+    color:  var(--clr) ;
 }
-.top .left img{
+h3{
+    font-size: 22px;
+    color: var(--clr);
+    margin-left: 5px;
+    
+    flex-wrap: wrap;
+}
+.top .img-logo img{
     width: 150px;
     height: 150px;
+    border: 1px solid var(--clr);
     border-radius: 50%;
 }
-.img-logo, .username{
+.top{
+    justify-content: center;
     text-align: center;
-} 
-img{
-    border-radius: 50%;
-    border: 2px solid coral;
-}
-.information, .Education, .other{
-    display: flex;
-    flex-direction: row;
-}
-.information .left,.Education .left, .other .left{
-    flex: 0 0 40%;
-    margin-left: 5px;
-}
-.information .right > p{
-    margin-left: 15px;
-}
-.information .left ul i ,.other .left ul i, .Education .right ul i{
-    color: coral;
-}
-li,p{
-    line-height: 30px;
-}
-.fa-ul{
-    margin-inline-start: 45px;
 }
 .media{
     display: flex;
@@ -72,7 +56,7 @@ footer{
     margin-top: 25px;
 }
 .icons i{
-    font-size: 30px;
+    font-size: 40px;
     margin: 0 7px;
     color: #48DBFB;
     cursor: pointer;
@@ -98,10 +82,48 @@ footer{
     margin-block-start: 15px;
     margin-inline-start: -30px;
 }
+.container .col{
+    display: flex;
+    flex-direction: row;
+}
+.container .col .col-4{
+    flex: 0 0 40%;
+    margin: 5px;
+}
+.left ul i, .right ul i{
+    color: var(--clr);
+}
+li,p{
+    line-height: 30px;
+}
+.fa-ul{
+    margin-inline-start: 45px;
+}
+.right >p {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 33px;
+}
+.fa-ul i::before {
+    color: var(--clr);
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.left{
+    border-right: 5px solid #a8cfdb;
+    border-top-right-radius: 2%;
+    border-bottom-right-radius: 2%;
+}
+li,p{
+    word-wrap: break-word;
+}
 @media screen and (max-width:860px){
-    .information, .Education, .other{
+    .container .col{
         display: flex;
         flex-direction: column;
+        margin: auto;
     }
     h3{
         margin-block-start: 0px;
@@ -124,6 +146,20 @@ footer{
     }
     .container{
         margin-top: 30px;
-        width: 100%;
+        width: 360px;
+    }
+    .left{
+        border-right: none;
+    }
+    .container .col .col-4{
+        flex: 1;
+        margin: 0;
+    }
+    li,p{
+        width: 300px;
+        word-wrap: break-word;
+    }
+    .project ul li ul li{
+        margin-inline-start: -50px;
     }
 }
